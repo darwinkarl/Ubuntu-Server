@@ -1,0 +1,7 @@
+To install the OpenSSH server application
+
+#sudo apt install openssh-server
+
+
+Reference
+https://documentation.ubuntu.com/server/how-to/security/openssh-server/index.html
