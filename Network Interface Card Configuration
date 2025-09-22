@@ -25,3 +25,15 @@ network:
 8. Enter the following to commit changes.
 sudo netplan generate
 sudo netplan apply
+
+
+// To configure dhcp on the interface //
+// on the yaml file paste this //
+---------------------------------------------------------------
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    eth0:
+      dhcp4: yes
+---------------------------------------------------------------
