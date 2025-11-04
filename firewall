@@ -13,3 +13,6 @@
 // To Add & delete Port and Protocol //
 # sudo ufw allow 80
 # sudo ufw allow ssh
+
+
+Reference guide: https://linuxconfig.org/ubuntu-24-04-firewall-a-quick-guide
