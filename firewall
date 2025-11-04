@@ -1,0 +1,15 @@
+// To Install firewall //
+# sudo apt install ufw
+
+// To enable firewall //
+# sudo ufw enable
+
+// To check the status & numbering //
+# sudo ufw status numbered
+
+// To check the incoming and outgoing //
+# sudo ufw status verbose
+
+// To Add & delete Port and Protocol //
+# sudo ufw allow 80
+# sudo ufw allow ssh
