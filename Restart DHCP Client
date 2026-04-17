@@ -1,0 +1,9 @@
+nmcli connection down <interface_name> && nmcli connection up <interface_name>
+
+
+24.04 has moved to a using dhcpcd5 for a DHCP client. 
+To Release the client
+# dhcpcd -k
+
+To Renew the client
+# dhcpcd ens160
