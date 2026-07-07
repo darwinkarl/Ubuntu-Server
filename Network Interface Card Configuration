@@ -53,4 +53,8 @@ network:
       nameservers:
         addresses: 				# Your DNS servers
 
+---------------------------------------------------------------
+
+Identify Your Interface Name
+# ip -br link
  
