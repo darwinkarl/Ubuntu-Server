@@ -57,4 +57,23 @@ network:
 
 Identify Your Interface Name
 # ip -br link
- 
+
+
+---------------------------------------------------------------
+
+To remove or suppress the system-generated network interface alias (altname) in Ubuntu 24.04
+
+1. Create a custom systemd link file
+sudo mkdir -p /etc/systemd/network/
+sudo cp /usr/lib/systemd/network/99-default.link /etc/systemd/network/
+
+2. Edit the AlternativeNamesPolicy
+sudo nano /etc/systemd/network/99-default.link
+
+Locate the line that starts with AlternativeNamesPolicy and comment it out by adding a # at the beginning of the line, or simply delete the policy rules:
+# AlternativeNamesPolicy=database onboard slot path MACAddressPolicy=persistent
+
+3. Update the initramfs and reboot
+sudo update-initramfs -u
+sudo reboot
+
