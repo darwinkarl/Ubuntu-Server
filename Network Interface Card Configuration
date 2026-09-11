@@ -37,16 +37,14 @@ network:
     eth0:
       dhcp4: yes
 ---------------------------------------------------------------
-
-
 Ubuntu Server 24.04 Version
 // To Configure Static IP Address on the Interface //
+
 network:
   version: 2
   renderer: networkd
   ethernets:
     ens160: 					# Replace eno1 with your interface name
-      dhcp4: no 				# Set to no for static IP
       addresses:
 	  - "192.168.1.100/24" 		# Your static IP and subnet
       nameservers:
